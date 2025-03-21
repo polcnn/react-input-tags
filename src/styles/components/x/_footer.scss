@@ -1,0 +1,18 @@
+@use "../../variables/palette" as palette;
+@use "../../variables/text" as text;
+
+.x-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0px;
+    width: 100%;
+    height: auto;
+    font-weight: text.$fontWeightM;
+    background: palette.$white;
+    box-shadow: 0px -4px 12px rgba(0, 0, 0, 0.1);
+
+    strong {
+        color: palette.$primary;
+    }
+}

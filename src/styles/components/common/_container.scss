@@ -1,0 +1,28 @@
+@use "../../variables/breakpoints" as breakpoint;
+
+.container {
+    margin: 0px auto;
+    padding: 0px 10px;
+    width: 100%;
+
+    @media (min-width: breakpoint.$sm) {
+        max-width: 540px;
+        padding: 0px 15px;
+    }
+
+    @media (min-width: breakpoint.$md) {
+        max-width: 720px;
+    }
+
+    @media (min-width: breakpoint.$lg) {
+        max-width: 960px;
+    }
+
+    @media (min-width: breakpoint.$xl) {
+        max-width: 1140px;
+    }
+
+    @media (min-width: breakpoint.$xxl) {
+        max-width: 1320px;
+    }
+}

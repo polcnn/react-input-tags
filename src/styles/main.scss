@@ -1,0 +1,40 @@
+// Variables
+@use "./variables/breakpoints" as breakpoint;
+@use "./variables/palette" as palette;
+@use "./variables/text" as text;
+
+// Components
+@use "./components/index";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 41px;
+    font-family: text.$fontFamily;
+    font-size: text.$fontSizeM;
+    font-weight: text.$fontWeightDefault;
+    color: palette.$black;
+    background: palette.$backgroundColor;
+
+    @media (min-width: breakpoint.$md) {
+        margin-bottom: 44px;
+        font-size: text.$fontSizeDefault;
+    }
+}
+
+main {
+    padding: 10px 0px;
+
+    @media (min-width: breakpoint.$md) {
+        padding: 15px 0px;
+    }
+}

@@ -1,0 +1,36 @@
+@use "../../variables/palette" as palette;
+@use "../../variables/text" as text;
+
+.x-input-tags-root {
+    width: 100%;
+}
+
+.x-input-tags-container {
+    flex-wrap: wrap;
+    padding: 8px;
+    width: 100%;
+    min-height: 52px;
+    background: palette.$white;
+    border: 2px solid rgba($color: palette.$black, $alpha: 0.23);
+    border-radius: 7px;
+    cursor: text;
+    overflow: hidden;
+    transition: all 0.1s;
+
+    &:hover {
+        border-color: rgba($color: palette.$black, $alpha: 0.4);
+    }
+
+    &:focus,
+    &:focus-within {
+        border-color: palette.$secondary;
+    }
+}
+
+.x-input-tags-input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    min-width: 100px;
+    font-size: text.$fontSizeDefault;
+}

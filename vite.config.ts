@@ -9,4 +9,11 @@ export default defineConfig({
   preview: {
     port: 5000,
   },
+  build: {
+    outDir: "dist",
+    emptyOutDir: true,
+    commonjsOptions: {
+      transformMixedEsModules: true,
+    },
+  },
 });
